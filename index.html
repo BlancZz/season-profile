@@ -117,7 +117,10 @@
             </div>  
             <br>
             <div class="circle">
-                <img src="val.png" class="val">
+                <button onclick="copyVal()" class="val">
+                    <img src="val.png" class="val_img" id="_val">
+                </button>
+                
                 <img src="paimon.png" class="genshin">
                 <img src="gamemaker.png" class="gamemaker">
             </div>
@@ -129,27 +132,35 @@
         <div class = "contact_container">
             <h2 class = "contact" id = "_contact"> Contact </h2>
             <div class = "bubble_contact">
-                <div class = "bubble_discord">
+                <button onclick="copyDiscord()" class = "bubble_discord">
+                    <img src="discord.avif" class="logo" id = "discord">
                     <p>Discord</p>
-                </div>
-                <a href="https://github.com/BlancZz" target="_blank"><div class = "bubble_git">
-                    <p>GitHub</p>
-                </div></a>
-                <a href="https://www.facebook.com/zen.blanc.9" target="_blank"><div class = "bubble_fb">
-                    <p>Facebook</p>
-                </div></a>
+                </button>
+                <a href="https://github.com/BlancZz" target="_blank">
+                    <div class = "bubble_git">
+                        <p>GitHub</p>
+                        <img src="Github.webp" class="logo">
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/zen.blanc.9" target="_blank">
+                    <div class = "bubble_fb">
+                        <p>Facebook</p>
+                        <img src="facebook.png" class="logo">
+                    </div>
+                </a>
             </div>
         </div>
-            
 
+        <script>
+            function copyDiscord() {
+                navigator.clipboard.writeText("Blanc#5561");
+            }
+
+            function copyVal() {
+                navigator.clipboard.writeText("Blanc#1148");
+            }
+        </script>
     </div>
-
-    <!-- <div class="container external internal" id="content">
-        <div class="row">
-            <div class="col">1 of 2</div>
-            <div class="col">2 of 2</div>
-        </div>
-    </div> -->
 </body>
 
 </html>

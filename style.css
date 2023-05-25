@@ -9,7 +9,7 @@ body {
 .sky {
     position: relative;
     width: 100%;
-    height: 300vh;
+    height: 230vh;
     overflow: hidden;
     z-index: 0;
 }
@@ -366,12 +366,21 @@ a:hover {
 
 .contact {
     position: relative;
-    padding-top: 0;
+    padding-top: 10px;
+}
+
+.bubble_contact {
+    padding-top: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
 
 .bubble_discord {
-    /* float: left; */
+    float: left;
     position: relative;
     width:250px;
     height:70px;
@@ -379,8 +388,6 @@ a:hover {
     box-shadow: 10px 10px rgba(255, 255, 255, 0.2);
     border-radius:100px;
 
-    margin-left: auto;
-    margin-right: auto;
     border: none;
     background-color: #f4caff;
     color: #380019;
@@ -397,7 +404,7 @@ a:hover {
 }
 
 .bubble_git {
-    /* float: middle; */
+    float: middle;
     position: relative;
     width:250px;
     height:70px;
@@ -405,8 +412,6 @@ a:hover {
     box-shadow: 10px 10px rgba(255, 255, 255, 0.2);
     border-radius:100px;
 
-    margin-left: auto;
-    margin-right: auto;
     border: none;
     background-color: #f4caff;
     color: #380019;
@@ -420,10 +425,12 @@ a:hover {
     font-weight: bold;
     font-size: x-large;
     padding-top: 1px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .bubble_fb {
-    /* float: right; */
+    float: right;
     position: relative;
     width:250px;
     height:70px;
@@ -431,8 +438,6 @@ a:hover {
     box-shadow: 10px 10px rgba(255, 255, 255, 0.2);
     border-radius:100px;
 
-    margin-left: auto;
-    margin-right: auto;
     border: none;
     background-color: #f4caff;
     color: #380019;
